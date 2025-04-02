@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phone Directory (CSMSS Engg)</h1>
+        
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <input type="text" id="designation" placeholder="designation">
+            <button onclick="addOrUpdateContact()">Save</button>
+            <input type="hidden" id="editIndex">
+        </div>
+
+        <input type="text" id="search" placeholder="Search..." onkeyup="searchContacts()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>designation</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="contact-list"></tbody>
+        </table>
+    </div>
+
+    <script src="swcript.js"></script>
+</body>
+</html>
