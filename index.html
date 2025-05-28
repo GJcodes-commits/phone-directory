@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Phone Directory(CSMSS)</h1>
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchContacts()">
+    <button onclick="location.href='admin.html'">Admin Login</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Designation</th>
+        </tr>
+      </thead>
+      <tbody id="contact-list"></tbody>
+    </table>
+  </div>
+
+  <script src="user.js"></script>
+</body>
+</html>
